@@ -22,7 +22,7 @@ async function main() {
     where: { email: "admin@pegms.local" },
     update: {},
     create: {
-      name: "PEGMS Admin",
+      name: "ProjectBridge Admin",
       email: "admin@pegms.local",
       passwordHash,
       roleId: roleByName.ADMIN.id,

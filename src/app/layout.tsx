@@ -7,8 +7,8 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "PEGMS",
-  description: "Project Execution & Gap Management System",
+  title: "ProjectBridge",
+  description: "ProjectBridge — Project Execution & Gap Management",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
