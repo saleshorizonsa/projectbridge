@@ -5,6 +5,7 @@ import { signIn } from "next-auth/react";
 import { useState, useTransition } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { PasswordInput } from "@/components/ui/password-input";
 import { Label } from "@/components/ui/label";
 
 export function LoginForm() {
@@ -42,7 +43,7 @@ export function LoginForm() {
       </div>
       <div className="space-y-2">
         <Label htmlFor="password">Password</Label>
-        <Input id="password" name="password" type="password" defaultValue="Password123!" required />
+        <PasswordInput id="password" name="password" defaultValue="Password123!" required />
       </div>
       {error && <p className="text-sm text-destructive">{error}</p>}
       <Button className="w-full" type="submit" disabled={pending}>
